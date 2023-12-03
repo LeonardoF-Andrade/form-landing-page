@@ -1,0 +1,56 @@
+header h1 {
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
+
+  font-size: 36px;
+  line-height: 42px;
+
+  color: white;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.page {
+  width: 736px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 74px;
+  width: 319px;
+}
+
+body::before {
+  /*sub classe, vai fazer antes do body*/
+  content: "";
+  width: 100%;
+  height: 368px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1; /*Para deixar ele atras, mexe no eixo z no caso*/
+
+  background-color: #121214;
+}
+
+header p {
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #42d3ff;
+}
+
+form {
+  background-color: #fafafc;
+
+  margin-top: 38px;
+  min-height: 360px;
+  
+
+  border-radius: 8px;
+
+}
