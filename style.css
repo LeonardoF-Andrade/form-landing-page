@@ -74,6 +74,12 @@ fieldset {
   border: none;
 }
 
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 fieldset legend {
   font-size: 24px;
   line-height: 34px;
@@ -105,21 +111,34 @@ fieldset legend {
   margin-left: 12px;
   font-size: 12px;
   line-height: 20px;
-  color: #c1bccc;
+  color: #898690;
 }
 
-.input-wrapper input {
+.input-wrapper input,
+.input-wrapper textarea {
   border-radius: 8px;
 
-  background: #fafafc;
-  border: 1px solid var(--back-lines-in-white);
+  border: 1px solid #c1bccc;
   background: var(--shapes-02, #fafafc);
 
   height: 56px;
 
   padding: 0 24px;
-  color: #4e4958;
+  color: #6c6a71;
 
   font-size: 16px;
   line-height: 26px; /* 171.429% */
+}
+
+.input-wrapper label span:hover {
+  color: #6c6a71;
+}
+
+.input-wrapper input::placeholder {
+  opacity: 0.5;
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 168px;
 }
